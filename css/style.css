@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px dashed black;
 }
 
 body{
@@ -12,14 +11,14 @@ body{
 
 /* HEADER*/
 header{
-    background-color: darkorange;
+    background-color: #ff6900;
 }
-.container_header{
+.container{
     max-width: 1000px;
     margin: 0 auto;
 }
 
-.row_header{
+.row{
     display: flex;
     flex-wrap: wrap;
 }
@@ -46,6 +45,8 @@ header{
 header ul{
     list-style-type: none;
     color: white;
+    font-size: 13px;
+    font-weight: bold;
 }
 
 header li{
@@ -61,16 +62,11 @@ header i{
     margin: 5px;
 }
 
-.red{
+.price{
     color: red;
 }
 
 /* MAIN */
-.container_product{
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
 .row_product{
     display: flex;
     flex-wrap: wrap; 
@@ -140,4 +136,49 @@ header i{
 
 .product .hidden-image{
     display: none;
+}
+
+
+/* FOOTER */
+footer{
+    background-color: black;
+}
+
+.bottom{
+    padding: 30px 0px;
+}
+
+.column-60{
+    width: 60%;
+}
+
+.column-40{
+    width: 40%;
+    align-items: end;
+}
+
+.column-60, .column-40{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: white;
+}
+
+footer ul{
+    list-style-type: none;
+}
+
+footer li{
+    display: inline-block;
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+footer i{
+    margin-top: 5px;
+}
+
+footer hr{
+    width: 100%;
+    border: 2px solid white;
 }
