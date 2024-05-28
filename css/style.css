@@ -11,9 +11,11 @@ body{
 
 
 /* HEADER*/
-
+header{
+    background-color: darkorange;
+}
 .container_header{
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -25,7 +27,6 @@ body{
 .column-50{
     width: 50%;
     height: 50px;
-    background-color: orange;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,7 +35,6 @@ body{
 .column-25{
     width: 25%;
     height: 50px;
-    background-color: orange;
     display: flex;
     align-items: center;
 }
@@ -61,28 +61,74 @@ header i{
     margin: 5px;
 }
 
+.red{
+    color: red;
+}
+
 /* MAIN */
 .container_product{
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
 .row_product{
-    background-color: blue;
     display: flex;
     flex-wrap: wrap; 
     justify-content: center;
     align-items: center;
-    margin-top: 30px;  
+    margin: 30px 0px;
 }
 
 .product{
     width: calc((100% - 60px) / 3);
-    height: 400px;
-    background-color: orange;
     margin: 20px 10px;
+    position: relative;
 }
 
 .product img{
     width: 100%;
+}
+
+/* Favorite and Discount DIV */
+.favorite{
+    top: 20px;
+    right: 0px;
+    background-color: white;
+    font-size: 30px;
+}
+
+.discount{
+    bottom: 80px;
+    left: 0px;
+    background-color: red;
+    color: white;
+}
+
+.sustainability{
+    bottom: 80px;
+    left: 65px;
+    background-color: green;
+    color: white;
+}
+
+.favorite, .discount, .sustainability{
+    position: absolute;
+    padding: 0px 10px;
+}
+
+/* Image Hover */
+.product:hover .visible-image{
+    display: none;
+}
+
+.product:hover .hidden-image{
+    display: block;
+}
+
+.product .visible-image{
+    display: block;
+}
+
+.product .hidden-image{
+    display: none;
 }
