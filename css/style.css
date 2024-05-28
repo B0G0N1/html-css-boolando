@@ -89,32 +89,41 @@ header i{
     width: 100%;
 }
 
-/* Favorite and Discount DIV */
 .favorite{
+    position: absolute;
+    padding: 0px 10px;
     top: 20px;
     right: 0px;
     background-color: white;
     font-size: 30px;
 }
 
-.discount{
+.favorite:hover{
+    color: red;
+}
+
+/* Info DIV*/
+.info{
+    position: absolute;
     bottom: 80px;
     left: 0px;
+    display: flex;
+    flex-direction: row;
+}
+
+.discount{
     background-color: red;
     color: white;
+    padding: 0px 10px;
+    margin-right: 5px;
 }
 
 .sustainability{
-    bottom: 80px;
-    left: 65px;
     background-color: green;
     color: white;
-}
-
-.favorite, .discount, .sustainability{
-    position: absolute;
     padding: 0px 10px;
 }
+
 
 /* Image Hover */
 .product:hover .visible-image{
